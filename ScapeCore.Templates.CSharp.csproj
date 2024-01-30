@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+	
+  <PropertyGroup>
+	<PackageId>ScapeCore.Templates.CSharp</PackageId>
+	<PackageVersion>1.0.0</PackageVersion>
+	<Title>ScapeCore Templates</Title>
+	<PackageTags>dotnet-new;templates;scapecore;monogame</PackageTags>
+	<PackageType>Template</PackageType>
+	<IncludeContentInPack>true</IncludeContentInPack>
+	<IncludeBuildOutput>false</IncludeBuildOutput>
+	<ContentTargetFolders>.\content</ContentTargetFolders>
+	<NoWarn>$(NoWarn);NU5128</NoWarn>
+	<NoDefaultExcludes>true</NoDefaultExcludes>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
+    <Authors>papishushi</Authors>
+    <Company>ScapeCore</Company>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Copyright>MIT License 2024 - ScapeCore - Daniel Molinero Lucas</Copyright>
+    <PackageProjectUrl>https://github.com/Papishushi/ScapeCore</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Papishushi/ScapeCore</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+  	<Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**" />
+  	<Compile Remove="**\*" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <EmbeddedResource Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="ScapeCore.Core.SceneManagement" Version="1.0.2" />
+    <PackageReference Include="ScapeCore.Core.Targets" Version="1.0.3" />
+  </ItemGroup>
+	
+</Project>
