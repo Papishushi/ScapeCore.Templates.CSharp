@@ -3,7 +3,7 @@ using ScapeCore.Core.SceneManagement;
 using scdesktopgl;
 using System.Threading.Tasks;
 
-using var game = new ScapeCore.Core.Targets.LLAM(typeof(ScapeCore.Core.Engine.SceneManager));
+using var game = new ScapeCore.Core.Targets.LLAM(typeof(ScapeCore.Core.Engine.ResourceManager));
 var t = Task.Run(() => game.Run());
 var defaultScene = new Scene("Scene", 0);
 
