@@ -8,7 +8,7 @@
 
   <PropertyGroup>
 	<PackageId>ScapeCore.Templates.CSharp</PackageId>
-	<PackageVersion>1.0.2</PackageVersion>
+	<PackageVersion>1.0.3</PackageVersion>
 	<Title>ScapeCore Templates</Title>
 	<PackageTags>dotnet-new;templates;scapecore;monogame</PackageTags>
 	<PackageType>Template</PackageType>
@@ -20,7 +20,7 @@
     <SignAssembly>False</SignAssembly>
     <DelaySign>False</DelaySign>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>papishushi</Authors>
     <Company>ScapeCore</Company>
     <PackageReadmeFile>README.md</PackageReadmeFile>
