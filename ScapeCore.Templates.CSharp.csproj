@@ -8,7 +8,7 @@
 
   <PropertyGroup>
 	<PackageId>ScapeCore.Templates.CSharp</PackageId>
-	<PackageVersion>1.0.3</PackageVersion>
+	<PackageVersion>1.0.4</PackageVersion>
 	<Title>ScapeCore Templates</Title>
 	<PackageTags>dotnet-new;templates;scapecore;monogame</PackageTags>
 	<PackageType>Template</PackageType>
